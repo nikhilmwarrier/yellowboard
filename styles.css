@@ -1,0 +1,26 @@
+:root {
+  font-size: calc(1em * 1);
+}
+
+.modal {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}
+
+#editor {
+  background-color: yellow;
+  margin-top: var(--navbar-height);
+  min-height: calc(100vh - var(--navbar-height));
+  width: 100vw;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+nav a {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}

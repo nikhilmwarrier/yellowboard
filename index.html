@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="res/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fluid.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="marked.min.js" defer></script>
+    <script src="notepad.js" defer></script>
+    <title>YellowBoard</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#">YellowBoard</a>
+      </div>
+      <div class="links">
+        <a href="#help">Help</a>
+      </div>
+    </nav>
+
+    <div id="help" class="modal-overlay">
+      <div class="modal">
+        <a href="#" title="close" class="modal-close"> &times; </a>
+        <h1>Welcome to YellowBoard!</h1>
+        <p>
+          Here you can type stuff, and it will be auto saved [using
+          <code>localStorage()</code> API.] <br />
+          You can use YellowBoard as a quick notepad. Everything you type here
+          will be autosaved, and can be reatained even after you close your
+          browser.
+        </p>
+        <h3>Experimental: Markdown Support</h3>
+        <p>
+          YellowBoard supports <a href="http://markdownguide.org"> markdown</a>,
+          thanks to <a href="http://marked.js.org">MarkedJS</a>, but it has some
+          issues.
+          <br />
+          If you want to preview your markdown, you need to referesh your
+          browser. Also, you can write only one line of markdown-formatted text,
+          after which, you have to refresh the page. Else, the formatting will
+          not be applied.
+          <br /><br />
+          We are Open-Source!
+          <a href="https://github.com/nikhilmwarrier/yellowboard/"
+            >Contributions Open!</a
+          >
+        </p>
+      </div>
+    </div>
+    <div id="editor" contenteditable="true"></div>
+    <footer>
+      <p>
+        Created with
+        <span class="material-icons" style="color: red">favorite</span> using
+        <img
+          src="docs/res/fluidcss-banner_128-embed.png"
+          alt="FluidCSS"
+          class="fl-embed"
+        />
+        <br /><br />
+        Copyright &copy; 2020 Nikhil M Warrier
+        <br />
+        Licensed under
+        <a
+          href="https://github.com/nikhilmwarrier/yellowboard/blob/main/LICENSE"
+          >MIT</a
+        >. <br /><br />
+        <a href="https://github.com/nikhilmwarrier/yellowboard/">
+          <img
+            src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png"
+            alt="github_logo"
+            height="20"
+            width="20"
+          />
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
